@@ -1,9 +1,12 @@
 import './Background.css'
+import './../page.css'
+import background_image from './../../assets/background_image.png'
+
 
 function Background() {
     return (
       <>
-        <h1>Background Moment</h1>
+        <img src={background_image} id='background_image'/>
       </>
     )
   }

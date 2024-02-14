@@ -1,0 +1,10 @@
+/* This CSS File is being used for general CSS formatting across all 3 character pages */
+#background_image {
+    height: 2200px;
+    width: 1700px;
+    z-index: 0;
+    position: relative;
+    margin: auto;
+    zoom: 75%;
+    border-radius: 20px;
+}

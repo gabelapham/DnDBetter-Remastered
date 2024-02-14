@@ -1,4 +1,5 @@
 import './Stats.css'
+import './../page.css'
 import { useEffect, useState } from 'react'
 import stats_image from './../../assets/stats_image.png'
 
@@ -6,9 +7,7 @@ function Stats() {
 
     return (
       <>
-        <h1>Stats Moment</h1>
-        <image src={stats_image}/>
-        <p>help</p>
+        <img src={stats_image} id='background_image'/>
       </>
     )
   }

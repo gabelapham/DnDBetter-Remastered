@@ -13,17 +13,18 @@ function App() {
 
   return (
     <>
-    <div class="heading">
-      <h1>DnDBetter V2</h1>
-      <button onClick={() => 
+    <div id='root'>
+    <div id='heading'>
+      <h1 id='title'>DnDBetter v2</h1>
+      <button id='tab_button' onClick={() => 
         {setStats(1);
         setBackground(0);
         setSpells(0)}}>Stats</button>
-      <button onClick={() => 
+      <button id='tab_button' onClick={() => 
         {setStats(0);
         setBackground(1);
         setSpells(0)}}>Background</button>
-      <button onClick={() => 
+      <button id='tab_button' onClick={() => 
         {setStats(0);
         setBackground(0);
         setSpells(1)}}>Spells</button>
@@ -36,6 +37,7 @@ function App() {
     </div>
     <div style={{ display: spellsVis ? "block" : "none"}}>
       <Spells />
+    </div>
     </div>
     </>
   )
