@@ -32,7 +32,6 @@ function App() {
   return (
     <>
     <div id='root'>
-    <div id='heading'>
       <h1 id='title'>DnDBetter</h1>
       <button id='tab_button' title='Stats' onClick={() => 
         {setStats(1);
@@ -61,7 +60,6 @@ function App() {
     </div>
     <div id='page' style={{ display: spellsVis ? "block" : "none"}}>
       <Spells />
-    </div>
     </div>
     </>
   )
