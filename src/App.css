@@ -1,11 +1,21 @@
 p {
   color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#page {
+  height: 2200px;
+  width: 1700px;
+  z-index: 0;
+  position: relative;
+  margin: auto;
+  zoom: 75%;
 }
 
 #root {
   margin: 0 auto;
   text-align: center;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #heading {
@@ -20,6 +30,10 @@ p {
 #tab_button {
   margin: 30px;
   font-size: 30px;
+  background-color: transparent;
+  border-radius: 20px;
+  border-width: 3px;
+  border-color: white;
 }
 
 #save_button {
@@ -32,4 +46,24 @@ p {
 
 #save_image {
   zoom: 10%;
+}
+
+#char_name_stat {
+  position: absolute;
+  top: 135px;
+  left: 130px;
+  font-size: 35px;
+  max-width: 33%;
+  overflow: hidden;
+  max-height: 43px;
+}
+
+#char_name_back {
+  position: absolute;
+  top: 145px;
+  left: 132px;
+  font-size: 35px;
+  max-width: 33%;
+  overflow: hidden;
+  max-height: 43px;
 }
