@@ -3,3 +3,5 @@
 2. Open the DnDBetter-v2 folder in VS Code
 3. Use the command 'npm install' to install the node modules
 4. Use the command 'npm run dev' to run a developer build of the project
+
+Please read the [LICENSE](https://github.com/gabelapham/DnDBetter-v2/blob/main/LICENSE) for more information.
