@@ -4,7 +4,8 @@
     left: 228px;
     font-size: 30px;
     max-width: 27%;
-    overflow: auto;
+    overflow: hidden;
+    max-height: 35px;
 }
 #char_button {
     position: absolute;
