@@ -1,8 +1,10 @@
 #char_name {
     position: absolute;
-    top: 345px;
-    left: 300px;
+    top: 343px;
+    left: 228px;
     font-size: 30px;
+    max-width: 27%;
+    overflow: auto;
 }
 #char_button {
     position: absolute;

@@ -5,14 +5,14 @@ import stats_image from './../../assets/stats_image.png'
 
 function Stats() {
 
-  const [characterName, setCharacterName] = useState("Enter name here...")
+  const [characterName, setCharacterName] = useState("Click to enter name...")
 
     return (
       <>
         <img src={stats_image} id='background_image'/>
         <p id='char_name' contentEditable='false' onClick={() => {
-          var name = prompt("Insert your character's name.")
-          if (name.length() == 0) {
+          let name = prompt("Insert your character's name.")
+          if (name == "" || name.length == 0 || name.startsWith(" ")) {
             setCharacterName("Click to enter name...")
           } else {
             setCharacterName(name)
