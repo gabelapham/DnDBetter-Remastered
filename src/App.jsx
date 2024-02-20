@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 // Page Import
@@ -25,6 +23,7 @@ function App() {
     <>
     <div id='root'>
       <h1 id='title'>DnDBetter</h1>
+      <p style={{ color:'white' }}>[Remastered]</p>
       <button id='tab_button' title='Stats' onClick={() => 
         {setStats(1);
         setBackground(0);

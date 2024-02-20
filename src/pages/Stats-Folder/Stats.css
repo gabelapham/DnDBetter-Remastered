@@ -1,5 +1,7 @@
-#char_button {
+#insp {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 22.65rem;
+    left: 16.94rem;
+    height: 45px;
+    width: 45px;
 }
