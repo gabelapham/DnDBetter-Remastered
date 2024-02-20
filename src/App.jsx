@@ -11,23 +11,15 @@ import './page.css'
 
 // Picture Import
 import download_image from './assets/download_image.png'
-import dragon from './assets/DND_Art7.webp'
+
+// Script Import
+import nameInput from './scripts/NameInput.jsx'
 
 function App() {
   const [statsVis, setStats] = useState(1);
   const [backgroundVis, setBackground] = useState(0);
   const [spellsVis, setSpells] = useState(0);
-
   const [characterName, setCharacterName] = useState("Click to enter name...")
-
-  function nameInput() {
-    let name = prompt("Insert your character's name.")
-    if (name == "" || name.length == 0 || name.startsWith(" ")) {
-      setCharacterName("Click to enter name...")
-    } else {
-      setCharacterName(name)
-    }
-  }
 
   return (
     <>
@@ -51,12 +43,12 @@ function App() {
 
     {/* Pages displayed when the individual button is clicked. */}
     <div id='page' style={{ display: statsVis ? "block" : "none"}}>
-      <Stats/>
-      <p id='char_name_stat' contentEditable='false' onClick={() => nameInput()}>{characterName}</p>
+      <Stats />
+      <p id='char_name_stat' contentEditable='false' onClick={() => setCharacterName(nameInput())}>{characterName}</p>
     </div>
     <div id='page' style={{ display: backgroundVis ? "block" : "none"}}>
       <Background />
-      <p id='char_name_back' contentEditable='false' onClick={() => nameInput()}>{characterName}</p>
+      <p id='char_name_back' contentEditable='false' onClick={() => setCharacterName(nameInput())}>{characterName}</p>
     </div>
     <div id='page' style={{ display: spellsVis ? "block" : "none"}}>
       <Spells />
