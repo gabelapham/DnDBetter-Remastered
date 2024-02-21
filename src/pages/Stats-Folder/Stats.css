@@ -5,3 +5,13 @@
     height: 45px;
     width: 45px;
 }
+
+#class_p {
+    position:absolute;
+    top: 0rem;
+    left: 0rem;
+}
+
+#script_div {
+    z-index: 200;
+}
