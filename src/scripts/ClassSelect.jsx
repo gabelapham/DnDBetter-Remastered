@@ -55,7 +55,7 @@ const ClassSelect = ({trig, setTrig, set, curr, multiset, multicurr}) => {
                 </div>
                 <div>
                 <button id='cancel' onClick={() => setTrig(false)}>Cancel</button>
-                <button id='confirm' disabled={(mainSelect == secondSelect && multiSelect == 1)} onClick={() => {
+                <button id='confirm' disabled={(multiSelect == 1)} onClick={() => {
                     set(mainSelect)
                     setTrig(false)
                 }}>Confirm</button>
