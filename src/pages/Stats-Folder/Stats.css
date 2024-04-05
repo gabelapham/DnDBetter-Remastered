@@ -12,6 +12,13 @@
     left: 0rem;
 }
 
+#level_p {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    font-size: larger;
+}
+
 #script_div {
     z-index: 200;
 }

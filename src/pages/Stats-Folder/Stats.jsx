@@ -5,10 +5,12 @@ import inspiration from './../../assets/inspiration.png'
 import ClassSelect from '../../scripts/ClassSelect'
 
 function Stats() {
-    const [inspTrig, setInsp] = useState(false)
 
     const [classPop, setClassPop] = useState(false)
     const [userClass, setClass] = useState('Barbarian')
+    const [userSecondClass, setSecondClass] = useState('null')
+    const [userLevel, setLevel] = useState(1)
+    const [userSecondLevel, setSecondLevel] = useState('null')
 
     return (
       <>
@@ -17,8 +19,9 @@ function Stats() {
         <input type='checkbox' id='insp' ></input>
 
         <p id='class_p' onClick={() => setClassPop(true)}>{userClass}</p>
+        <p id='level_p'>{userLevel}</p>
         <div id='script_div'>
-          <ClassSelect trig={classPop} setTrig={setClassPop} set={setClass} curr={userClass}/>
+          <ClassSelect trig={classPop} setTrig={setClassPop} set={setClass} curr={userClass} multiset={setSecondClass} multicurr={userSecondClass}/>
         </div>
       </div>
       </>

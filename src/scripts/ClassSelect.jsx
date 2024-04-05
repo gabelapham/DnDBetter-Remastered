@@ -2,7 +2,13 @@ import React from 'react'
 import './scripts.css'
 import { useEffect, useState } from 'react'
 
-const ClassSelect = ({trig, setTrig, set, curr}) => {
+// trig = 1 to popup this prompt, 0 to not
+// setTrig = setting trig to 1 or 0
+// set = set user's main class
+// curr = user's current main class (before popup)
+// multiBool = boolean set when multiclassing is used or not
+
+const ClassSelect = ({trig, setTrig, set, curr, multiset, multicurr}) => {
     const [multiSelect, setMultiSelect] = useState(false)
 
     const [mainSelect, setMain] = useState(curr)
@@ -48,8 +54,8 @@ const ClassSelect = ({trig, setTrig, set, curr}) => {
                     </select>
                 </div>
                 <div>
-                <button onClick={() => setTrig(false)}>Cancel</button>
-                <button disabled={(mainSelect == secondSelect && multiSelect == 1)} onClick={() => {
+                <button id='cancel' onClick={() => setTrig(false)}>Cancel</button>
+                <button id='confirm' disabled={(mainSelect == secondSelect && multiSelect == 1)} onClick={() => {
                     set(mainSelect)
                     setTrig(false)
                 }}>Confirm</button>
